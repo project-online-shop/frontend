@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import Navbar from "./components/Navbar";
+import EditProfilCard from "./components/EditProfilCard";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Navbar />
+    <EditProfilCard />
   </React.StrictMode>
 );
 
