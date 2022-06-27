@@ -2,12 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import EditProfilCard from "./components/EditProfilCard";
+// import EditProfilCard from "./components/EditProfilCard";
+// import Login from "./components/Login";
+// import Register from "./components/Register";
+import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <EditProfilCard />
+    <App />
   </React.StrictMode>
 );
 
