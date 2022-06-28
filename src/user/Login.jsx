@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import Footer from "../components/Footer";
 
 import logo from "../image/logo-.png";
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -20,7 +21,7 @@ const Login = () => {
     setLoading(true);
 
     axios
-      .post("https://virtserver.swaggerhub.com/Alfin7007/infinitysport/1.0.0/login", body)
+      .post("http://34.238.252.143:8000/login", body)
       .then(({ data }) => {
         console.log(data);
       })
@@ -36,43 +37,52 @@ const Login = () => {
     <>
       {/* <Navbar /> */}
       <Layout>
-        <div className="border shadow-lg flex flex-col justify-center items-center m-56 p-5">
-          <img className="" src={logo} alt="logo" />
-          <form className="w-full mx-auto" onSubmit={(e) => handleSubmit(e)}>
-            <div>
-              <p>email</p>
-              <input
-                className="w-1/2"
-                id="input-email"
-                label="Email"
-                value={email}
-                type="email"
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                }}
-              ></input>
-            </div>
-            <div>
-              <p>Password</p>
-              <input
-                className="w-1/2"
-                id="input-password"
-                label="Password"
-                value={password}
-                type="email"
-                onChange={(e) => {
-                  setPassword(e.target.value);
-                }}
-              ></input>
-            </div>
-            <button
-              className="bg-gra
-             text-white rounded-full px-3 py-2"
-              type="submit"
-            >
-              Login
-            </button>
-          </form>
+        <div className="flex justify-center items-center min-h-screen px-12 py-10 mt-4 text-left shadow-lg">
+          <div className="px-12 py-10 mt-4 text-left shadow-lg">
+            <img className="p-3" src={logo} alt="logo" />
+            <h3 className="text-2xl font-bold text-center">Login</h3>
+            <form action="" onSubmit={(e) => handleSubmit(e)}>
+              <div className="mt-4">
+                <div>
+                  <label className="block" for="email">
+                    Email
+                  </label>
+                  <input
+                    id="input-email"
+                    label="Email"
+                    type="text"
+                    placeholder="Email"
+                    value={email}
+                    className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                    }}
+                  />
+                </div>
+                <div className="mt-4">
+                  <div>
+                    <label className="block" for="email">
+                      Password
+                    </label>
+                    <input
+                      id="input-password"
+                      label="Password"
+                      type="Password"
+                      value={password}
+                      placeholder="password"
+                      className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
+                      onChange={(e) => {
+                        setPassword(e.target.value);
+                      }}
+                    />
+                  </div>
+                  <button className="border rounded-lg px-6 py-2 mt-4 bg-slate" type="submit">
+                    Login
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </Layout>
       <Footer />

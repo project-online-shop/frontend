@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import EditProfilCard from "./components/EditProfilCard";
 import Login from "./user/Login";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
