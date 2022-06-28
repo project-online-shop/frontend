@@ -39,14 +39,11 @@ const Register = () => {
     } else {
       setInvalid(false);
       await axios
-        .post(
-          "https://virtserver.swaggerhub.com/Alfin7007/infinitysport/1.0.0/signup",
-          {
-            name,
-            email,
-            password,
-          }
-        )
+        .post("34.238.252.143:8000/signup", {
+          name,
+          email,
+          password,
+        })
         .then((res) => {
           console.log(res);
         })
