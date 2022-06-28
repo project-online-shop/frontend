@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Layout from "../components/Layout";
+import Footer from "../components/Footer";
 
+import logo from "../image/logo-.png";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -30,35 +33,50 @@ const Login = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={(e) => handleSubmit(e)}>
-        <label>email</label>
-        <input
-          className="font-sm text-base p-2 border border-slate-700 m-3"
-          type="text"
-          id="input-email"
-          placeholder="email"
-          value={email}
-          onChange={(e) => {
-            setEmail(e.target.value);
-          }}
-        ></input>
-        <label>password</label>
-        <input
-          className="font-sm text-base p-2 border border-slate-700 m-3"
-          type="password"
-          id="input-password"
-          placeholder="password"
-          value={password}
-          onChange={(e) => {
-            setPassword(e.target.value);
-          }}
-        ></input>
-        <button className="bg-slate-600 text-white p-2" type="submit">
-          Login
-        </button>
-      </form>
-    </div>
+    <>
+      {/* <Navbar /> */}
+      <Layout>
+        <div className="border shadow-lg flex flex-col justify-center items-center m-56 p-5">
+          <img className="" src={logo} alt="logo" />
+          <form className="w-full mx-auto" onSubmit={(e) => handleSubmit(e)}>
+            <div>
+              <p>email</p>
+              <input
+                className="w-1/2"
+                id="input-email"
+                label="Email"
+                value={email}
+                type="email"
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+              ></input>
+            </div>
+            <div>
+              <p>Password</p>
+              <input
+                className="w-1/2"
+                id="input-password"
+                label="Password"
+                value={password}
+                type="email"
+                onChange={(e) => {
+                  setPassword(e.target.value);
+                }}
+              ></input>
+            </div>
+            <button
+              className="bg-gra
+             text-white rounded-full px-3 py-2"
+              type="submit"
+            >
+              Login
+            </button>
+          </form>
+        </div>
+      </Layout>
+      <Footer />
+    </>
   );
 };
 
