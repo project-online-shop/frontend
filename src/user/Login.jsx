@@ -76,7 +76,7 @@ const Login = () => {
                       }}
                     />
                   </div>
-                  <button className="border rounded-lg px-6 py-2 mt-4 bg-slate" type="submit">
+                  <button className="bg-slate-500 text-white rounded-lg px-6 py-2 mt-4 bg-slate" type="submit">
                     Login
                   </button>
                 </div>
