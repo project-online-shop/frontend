@@ -2,12 +2,19 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import EditProfilCard from "./components/EditProfilCard";
+import { BrowserRouter } from "react-router-dom";
+// import EditProfilCard from "./components/EditProfilCard";
+// import Login from "./components/Login";
+// import Register from "./components/Register";
+import App from "./App";
+// import Navbar from "./components/Navbar";
+// import Footer from "./components/Footer";
+// import Layout from "./components/Layout";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <EditProfilCard />
+    <App />
   </React.StrictMode>
 );
 
