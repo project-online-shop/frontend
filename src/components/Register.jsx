@@ -39,13 +39,14 @@ const Register = () => {
     } else {
       setInvalid(false);
       await axios
-        .post("34.238.252.143:8000/signup", {
+        .post("http://34.238.252.143:8000/signup", {
           name,
           email,
           password,
         })
         .then((res) => {
           console.log(res);
+          navigate("/login");
         })
         .catch((err) => console.log(err));
     }
