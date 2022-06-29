@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import DetailProduct from "./pages/DetailProduct";
 import reportWebVitals from "./reportWebVitals";
-import Login from "./user/Login";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Login />
+    <DetailProduct />
   </React.StrictMode>
 );
 
