@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import infinitySport from "../images/infinitySport.png";
+import { Link } from "react-router-dom";
+import { AuthContext } from "../Context/AuthContext";
 
 const Navbar = (props) => {
+  const { isAuthenticated } = useContext(AuthContext);
   return (
     <nav className="sticky top-0 w-full px-2 py-2.5 bg-white flex justify-between items-center drop-shadow-xl">
       <div className="flex">
@@ -42,12 +45,32 @@ const Navbar = (props) => {
         </form>
       </div>
       <div className="flex gap-2">
-        <button className="px-6 py-2 mt-4 text-black bg-white border border-black rounded-lg hover:bg-slate-500 ">
-          Sign Up
-        </button>
-        <button className="px-6 py-2 mt-4 text-white bg-black rounded-lg hover:bg-slate-500 ">
-          Login
-        </button>
+        {isAuthenticated ? (
+          <>
+            <Link to={"/transaksi"}>
+              <h1>transaksi</h1>
+            </Link>
+            <Link to="/shippingcart">
+              <h1>cart</h1>
+            </Link>
+            <Link to="/profile">
+              <h1>profile</h1>
+            </Link>
+          </>
+        ) : (
+          <>
+            <Link to={"/register"}>
+              <button className="px-6 py-2 mt-4 text-black bg-white border border-black rounded-lg hover:bg-slate-500 ">
+                Sign Up
+              </button>
+            </Link>
+            <Link to={"/login"}>
+              <button className="px-6 py-2 mt-4 text-white bg-black rounded-lg hover:bg-slate-500 ">
+                Login
+              </button>
+            </Link>
+          </>
+        )}
       </div>
     </nav>
   );

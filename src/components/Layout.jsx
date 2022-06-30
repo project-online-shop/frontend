@@ -7,7 +7,7 @@ class Layout extends Component {
     return (
       <div className="w-full h-screen flex flex-col overflow-auto bg-white">
         <Navbar title={this.props.title} />
-        <div className="h-full w-full">{this.props.children}</div>
+        <div className="w-full">{this.props.children}</div>
         <Footer />
       </div>
     );

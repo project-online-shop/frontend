@@ -7,6 +7,8 @@ import { BrowserRouter } from "react-router-dom";
 // import Login from "./components/Login";
 // import Register from "./components/Register";
 import App from "./App";
+import { AuthProvider } from "./Context/AuthContext";
+import { ProductProvider } from "./Context/ProductContext";
 // import Navbar from "./components/Navbar";
 // import Footer from "./components/Footer";
 // import Layout from "./components/Layout";
@@ -14,7 +16,11 @@ import App from "./App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <AuthProvider>
+      <ProductProvider>
+        <App />
+      </ProductProvider>
+    </AuthProvider>
   </React.StrictMode>
 );
 

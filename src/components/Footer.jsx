@@ -2,47 +2,47 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer class="bg-black text-center lg:text-left">
-      <div class="container p-6">
-        <div class="grid lg:grid-cols-3 md:grid-cols-2">
-          <div class="mb-6">
-            <h3 class=" font-bold mb-2.5 text-white">Infinitysport</h3>
+    <footer className="bg-black text-center lg:text-left">
+      <div className="container p-6">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2">
+          <div className="mb-2">
+            <h3 className=" font-bold mb-2.5 text-white">Infinitysport</h3>
 
-            <ul class="list-none mb-0">
+            <ul className="list-none mb-0">
               <li>
-                <a href="#!" class="text-white">
+                <a href="#!" className="text-white">
                   Tentang Infinitysport
                 </a>
               </li>
               <li>
-                <a href="#!" class="text-white">
+                <a href="#!" className="text-white">
                   Infinitysport Care
                 </a>
               </li>
               <li>
-                <a href="#!" class="text-white">
+                <a href="#!" className="text-white">
                   Blog
                 </a>
               </li>
             </ul>
           </div>
 
-          <div class="mb-6">
-            <h3 class=" font-bold mb-2.5 text-white">Pelayanan</h3>
+          <div className="mb-6">
+            <h3 className=" font-bold mb-2.5 text-white">Pelayanan</h3>
 
-            <ul class="list-none mb-0">
+            <ul className="list-none mb-0">
               <li>
-                <a href="#!" class="text-white">
+                <a href="#!" className="text-white">
                   Bantuan
                 </a>
               </li>
               <li>
-                <a href="#!" class="text-white">
+                <a href="#!" className="text-white">
                   Hubungi Kami
                 </a>
               </li>
               <li>
-                <a href="#!" class="text-white">
+                <a href="#!" className="text-white">
                   Kebijakan Privasi
                 </a>
               </li>
@@ -50,18 +50,18 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 class=" font-bold mb-2.5 text-white text-center">
+            <h3 className=" font-bold mb-2.5 text-white text-center">
               Follow Kami
             </h3>
-            <div class="container pt-9">
-              <div class="flex justify-center mb-9">
-                <a href="#!" class="mr-9 text-white">
+            <div className="container pt-9">
+              <div className="flex justify-center mb-9">
+                <a href="#!" className="mr-9 text-white">
                   <svg
                     aria-hidden="true"
                     focusable="false"
                     data-prefix="fab"
                     data-icon="facebook-f"
-                    class="svg-inline--fa fa-facebook-f w-2.5"
+                    className="svg-inline--fa fa-facebook-f w-2.5"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 320 512"
@@ -72,13 +72,13 @@ const Footer = () => {
                     ></path>
                   </svg>
                 </a>
-                <a href="#!" class="mr-9 text-white">
+                <a href="#!" className="mr-9 text-white">
                   <svg
                     aria-hidden="true"
                     focusable="false"
                     data-prefix="fab"
                     data-icon="twitter"
-                    class="svg-inline--fa fa-twitter w-4"
+                    className="svg-inline--fa fa-twitter w-4"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
@@ -89,13 +89,13 @@ const Footer = () => {
                     ></path>
                   </svg>
                 </a>
-                <a href="#!" class="mr-9 text-white">
+                <a href="#!" className="mr-9 text-white">
                   <svg
                     aria-hidden="true"
                     focusable="false"
                     data-prefix="fab"
                     data-icon="google"
-                    class="svg-inline--fa fa-google w-3.5"
+                    className="svg-inline--fa fa-google w-3.5"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 488 512"
@@ -106,13 +106,13 @@ const Footer = () => {
                     ></path>
                   </svg>
                 </a>
-                <a href="#!" class="mr-9 text-white">
+                <a href="#!" className="mr-9 text-white">
                   <svg
                     aria-hidden="true"
                     focusable="false"
                     data-prefix="fab"
                     data-icon="instagram"
-                    class="svg-inline--fa fa-instagram w-3.5"
+                    className="svg-inline--fa fa-instagram w-3.5"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"
@@ -123,13 +123,13 @@ const Footer = () => {
                     ></path>
                   </svg>
                 </a>
-                <a href="#!" class="mr-9 text-white">
+                <a href="#!" className="mr-9 text-white">
                   <svg
                     aria-hidden="true"
                     focusable="false"
                     data-prefix="fab"
                     data-icon="linkedin-in"
-                    class="svg-inline--fa fa-linkedin-in w-3.5"
+                    className="svg-inline--fa fa-linkedin-in w-3.5"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"
@@ -140,13 +140,13 @@ const Footer = () => {
                     ></path>
                   </svg>
                 </a>
-                <a href="#!" class="text-white">
+                <a href="#!" className="text-white">
                   <svg
                     aria-hidden="true"
                     focusable="false"
                     data-prefix="fab"
                     data-icon="github"
-                    class="svg-inline--fa fa-github w-4"
+                    className="svg-inline--fa fa-github w-4"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 496 512"
