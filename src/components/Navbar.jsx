@@ -2,17 +2,21 @@ import React, { useContext } from "react";
 import infinitySport from "../images/infinitySport.png";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../Context/AuthContext";
+import { BsCart3, BsFillPersonFill } from "react-icons/bs";
+import { FaRegMoneyBillAlt } from "react-icons/fa";
 
 const Navbar = (props) => {
   const { isAuthenticated } = useContext(AuthContext);
   return (
     <nav className="sticky top-0 w-full px-2 py-2.5 bg-white flex justify-between items-center drop-shadow-xl">
       <div className="flex">
-        <img
-          src={infinitySport}
-          alt="logo_infinitySport"
-          className="w-20 h-20"
-        />
+        <Link to={"/"}>
+          <img
+            src={infinitySport}
+            alt="logo_infinitySport"
+            className="w-20 h-20"
+          />
+        </Link>
       </div>
       <div>
         <form class="flex items-center">
@@ -48,13 +52,13 @@ const Navbar = (props) => {
         {isAuthenticated ? (
           <>
             <Link to={"/transaksi"}>
-              <h1>transaksi</h1>
+              <FaRegMoneyBillAlt className="w-8 h-8" />
             </Link>
             <Link to="/shippingcart">
-              <h1>cart</h1>
+              <BsCart3 className="w-8 h-8" />
             </Link>
             <Link to="/profile">
-              <h1>profile</h1>
+              <BsFillPersonFill className="w-8 h-8" />
             </Link>
           </>
         ) : (

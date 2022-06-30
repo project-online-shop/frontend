@@ -70,7 +70,7 @@ const ShippingCart = () => {
               <input
                 type="text"
                 className="focus:outline-none w-full h-6 bg-gray-800 text-white placeholder-gray-300 text-sm border-b border-gray-600 py-4"
-                placeholder="Andaru Akbar"
+                placeholder="BCA Virtual Account"
                 onChange={(e) => setPaymentName(e.target.value)}
               />
             </div>
@@ -79,7 +79,7 @@ const ShippingCart = () => {
               <input
                 type="text"
                 className="focus:outline-none w-full h-6 bg-gray-800 text-white placeholder-gray-300 text-sm border-b border-gray-600 py-4"
-                placeholder="+62 8123456789"
+                placeholder="AX1234b4567b"
                 onChange={(e) => setPaymentCode(e.target.value)}
               />
             </div>
@@ -88,7 +88,7 @@ const ShippingCart = () => {
               <input
                 type="text"
                 className="focus:outline-none w-full h-6 bg-gray-800 text-white placeholder-gray-300 text-sm border-b border-gray-600 py-4"
-                placeholder="Jl. Sooko - Pulung, Ponorogo, Jawatimur, kode pos : ...."
+                placeholder="23412356"
                 onChange={(e) => setNumberCard(e.target.value)}
               />
             </div>

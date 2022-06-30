@@ -1,11 +1,12 @@
 import { createContext, useEffect, useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import jwtDecode from "jwt-decode";
 
 export const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [isAuthenticated, setAuthenticated] = useState(false);
+  //   const []
 
   const login = (email, password) => {
     axios
@@ -17,6 +18,7 @@ export const AuthProvider = ({ children }) => {
         console.log(data);
         localStorage.setItem("token", data.token);
         console.log(localStorage.getItem("token"));
+        console.log(jwtDecode(data.token));
         setAuthenticated(true);
       })
       .catch((err) => {
