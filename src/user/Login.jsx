@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Layout from "../components/Layout";
-import Footer from "../components/Footer";
+import { useNavigate } from "react-router-dom";
 
 import logo from "../image/logo-.png";
+import { NavigateBeforeOutlined } from "@mui/icons-material";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -35,7 +37,6 @@ const Login = () => {
 
   return (
     <>
-      {/* <Navbar /> */}
       <Layout>
         <div className="flex justify-center items-center min-h-screen px-12 py-10 mt-4 text-left shadow-lg">
           <div className="px-12 py-10 mt-4 text-left shadow-lg">
@@ -76,7 +77,13 @@ const Login = () => {
                       }}
                     />
                   </div>
-                  <button className="bg-black text-white rounded-lg px-6 py-2 mt-4 font-semibold" type="submit">
+                  <button
+                    className="bg-black text-white rounded-lg px-6 py-2 mt-4 font-semibold"
+                    type="submit"
+                    onClickLogintoHome={() => {
+                      navigate("/");
+                    }}
+                  >
                     Login
                   </button>
                 </div>
@@ -85,7 +92,6 @@ const Login = () => {
           </div>
         </div>
       </Layout>
-      <Footer />
     </>
   );
 };
