@@ -2,7 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import axios from "axios";
 
 export const ProductContext = createContext();
-const Base_Url = "http://34.238.252.143";
+const Base_Url = "https://infinitysport.site";
 
 export const ProductProvider = ({ children }) => {
   const [products, setProducts] = useState([]);

@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = (email, password) => {
     axios
-      .post("http://34.238.252.143/login", {
+      .post("https://infinitysport.site/login", {
         email,
         password,
       })

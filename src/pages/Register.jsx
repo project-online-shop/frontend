@@ -21,7 +21,7 @@ const Register = () => {
     } else {
       setInvalid(false);
       await axios
-        .post("http://34.238.252.143/signup", {
+        .post("https://infinitysport.site/signup", {
           name,
           email,
           password,
